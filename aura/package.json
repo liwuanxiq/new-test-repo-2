@@ -1,0 +1,40 @@
+{
+  "name": "aura",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Next-generation AI-native e-commerce platform",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\" \"npm run dev:realtime\"",
+    "dev:web": "turbo run dev --filter=@aura/web",
+    "dev:admin": "turbo run dev --filter=@aura/admin",
+    "dev:api": "turbo run dev --filter=@aura/api",
+    "dev:realtime": "turbo run dev --filter=@aura/realtime",
+    "build": "turbo run build",
+    "build:web": "turbo run build --filter=@aura/web",
+    "build:admin": "turbo run build --filter=@aura/admin",
+    "build:api": "turbo run build --filter=@aura/api",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "db:migrate": "turbo run db:migrate --filter=@aura/api",
+    "db:seed": "turbo run db:seed --filter=@aura/api",
+    "docker:build": "docker-compose build",
+    "docker:up": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "concurrently": "^8.2.2",
+    "prettier": "^3.1.1",
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "packageManager": "npm@10.2.4"
+}

@@ -1,0 +1,96 @@
+```
+# Dependencies
+node_modules/
+.pnpm-store/
+.yarn/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+.next/
+.nuxt/
+out/
+public/build/
+coverage/
+.nyc_output/
+
+# Environment variables
+.env
+.env.local
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+ENV/
+.env.bak
+venv.bak
+
+# TypeScript/JavaScript
+*.tsbuildinfo
+*.js.map
+*.mjs.map
+*.cjs.map
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Icon?
+.directory
+.hgcheckout
+.hgfiles
+.hgignore
+.hgsigs
+.hgtags
+.svn/
+.CVS/
+.git/
+
+# Logs
+*.log
+*.log.*
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Temporary folders
+tmp/
+temp/
+.tmp/
+
+# Database
+*.db
+*.db-journal
+
+# Prisma
+prisma/migrations/
+
+# Next.js
+.next/
+out/
+package-lock.json
+yarn.lock
+
+# Turborepo
+.node-version
+```
